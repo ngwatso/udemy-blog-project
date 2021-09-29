@@ -3,6 +3,7 @@
  */
 import Link from 'next/link';
 import Image from 'next/image';
+import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post }) {
 	return (
@@ -19,7 +20,9 @@ export default function Post({ post }) {
 				<span className="font-light text-gray-600">
 					{post.frontmatter.date}
 				</span>
-				<div>{post.frontmatter.category}</div>
+				<CategoryLabel>
+					{post.frontmatter.category}
+				</CategoryLabel>
 			</div>
 
 			<div className="mt-2">
