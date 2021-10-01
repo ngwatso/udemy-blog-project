@@ -13,6 +13,7 @@ import CategoryList from '@/components/CategoryList';
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
 	return (
 		<Layout>
+			<Link href="/blog"> &larr; Go Back</Link>
 			<div className="flex justify-between">
 				<div className="w-3/4 mr-10">
 					<h1 className="text-5xl border-b-4 p-5 font-bold">
